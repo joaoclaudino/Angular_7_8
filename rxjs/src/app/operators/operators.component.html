@@ -1,0 +1,28 @@
+<div fxFill fxLayout="column" fxLayoutAlign="center start">
+  <button mat-button color="primary" (click)="mapClick()">Map</button>
+  <button mat-button color="primary" (click)="filterClick()">Filter</button>
+  <button mat-button color="primary" (click)="tapClick()">Tap</button>
+  <button mat-button color="primary" (click)="takeClick()">Take</button>
+  <button mat-button color="primary" (click)="debaunceTimeClick()">Debaunce Time</button>
+  <button mat-button color="primary" (click)="debaunceTimeClickSearch()">Debaunce Time Search</button>
+  <button mat-button color="primary" (click)="takeWhileClick()">Take While</button>
+  <button mat-button color="primary" (click)="takeUntilSearch()">Take Until</button>
+</div>
+
+<div class="dbaounce-area"
+  matRipple 
+  matRippleCentered="true"
+  matRuppleColor="rgb(240,166,166,0.4)"
+  matRippleRadius="40">
+</div>  
+<mat-divider></mat-divider>
+  <mat-form-field style="margin: 20px;">
+    <input 
+      matInput 
+      placeholder="Type something" 
+      autocomplete="off"
+      (keyup)="serarchBy_UsingDebounce($event)"
+      [(ngModel)]="serarchInput"
+    >
+  </mat-form-field>
+

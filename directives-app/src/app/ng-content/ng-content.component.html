@@ -1,0 +1,19 @@
+<mat-card class="mycard">
+  <mat-card-header>
+    <mat-card-title>Homer Simpson</mat-card-title>
+    <mat-card-subtitle>Duff!</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image 
+    src="https://upload.wikimedia.org/wikipedia/pt/thumb/0/02/Homer_Simpson_2006.png/220px-Homer_Simpson_2006.png"
+    alt="Homer Simpson"/>
+  <mat-card-content>
+    <ng-content>
+
+    </ng-content>
+  </mat-card-content>
+
+  <mat-card-actions>
+    <button mat-button color="accent">LIKE</button>
+    <button mat-button color="primary">SHARE</button>
+  </mat-card-actions>
+</mat-card>
